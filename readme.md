@@ -39,3 +39,38 @@
 
 **База данных**:
 - JPA/Hibernate для работы с БД
+
+## Примерный перечень эндпоинтов
+
+### Book Controller
+- `PUT /api/v1/books/take` - взятие книги
+- `PUT /api/v1/books/return` - возврат книги
+- `PUT /api/v1/books/extend` - продление срока
+- `GET /api/v1/books/verifiableuser` - проверка пользователя
+- `GET /api/v1/books/current` - текущие книги
+- `GET /api/v1/books/current/count` - количество текущих книг
+
+### Messages Controller
+- `PUT /api/messages/reply` - ответ на сообщение
+- `POST /api/messages/send` - отправка сообщения
+
+### Review Controller
+- `POST /api/reviews/postReview` - публикация отзыва
+- `GET /api/reviews/reviewBook` - просмотр отзывов о книге
+
+### Auth Controller
+- `POST /api/auth/register` - регистрация пользователя
+- `POST /api/auth/refresh` - обновление токена
+- `POST /api/auth/login` - вход в систему
+
+### Test Controller
+- `GET /api/v1/test/user` - тестовый эндпоинт пользователя
+- `GET /api/v1/test/any` - тестовый эндпоинт общий
+- `GET /api/v1/test/all` - тестовый эндпоинт для всех
+- `GET /api/v1/test/admin` - тестовый эндпоинт администратора
+
+### Payment Controller
+- `PUT /api/payment/secure/pay/ok` - подтверждение оплаты
+- `POST /api/payment/secure/pay` - выполнение оплаты
+
+
